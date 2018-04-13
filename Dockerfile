@@ -6,4 +6,4 @@ RUN echo "deb http://http.debian.net/debian jessie contrib" >> /etc/apt/sources.
     apt-get install -y ttf-mscorefonts-installer && \
     apt-get clean
 ENV JAVA_OPTS="-Djava.awt.headless=true" \
-    CATALINA_OPTS="-XX:+UseBiasedLocking -XX:BiasedLockingStartupDelay=0 -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:+DisableExplicitGC -XX:+CMSIncrementalMode -XX:+CMSIncrementalPacing -XX:+CMSParallelRemarkEnabled -XX:+UseCompressedOops -XX:+UseCMSInitiatingOccupancyOnly -Djava.awt.headless=true"
+    CATALINA_OPTS="-XX:+UseBiasedLocking -XX:BiasedLockingStartupDelay=0 -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:+DisableExplicitGC -XX:+CMSIncrementalMode -XX:+CMSIncrementalPacing -XX:+CMSParallelRemarkEnabled -XX:+UseCompressedOops -XX:+UseCMSInitiatingOccupancyOnly -Djava.awt.headless=true -Duser.timezone=America/Recife -Duser.language=pt -Duser.region=BR"
